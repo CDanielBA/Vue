@@ -23,3 +23,22 @@
     
   </swiper>
 </template>
+<style>
+.swiper{
+  width: 800px;
+}
+@media (max-width: 1000px) {
+  .swiper{
+    width: 400px;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+}
+@media(max-width:620px){
+  .swiper{
+    width: 320px;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+}
+</style>

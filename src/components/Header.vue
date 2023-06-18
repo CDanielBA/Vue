@@ -16,7 +16,7 @@ export default {
       <img src="../assets/header/logo.png" alt="">
     </menu>
     <div class="search">
-      <input type="text" class="search" placeholder="search here">
+      <input type="text" class="input-search" placeholder="search here">
       <div class="btn-noti-skyblue">
         <img src="../assets/icons/setting.png" alt="">
       </div>
@@ -78,12 +78,13 @@ menu{
 .arrow{
   margin: auto;
 }
-.search{
+.input-search{
   width: 500px;
   background-color: #1c2126;
   border: none;
   border-radius: 1rem;
   height: 50px;
+  display: block;
 
 }
 .btn-noti,.btn-noti-skyblue{
@@ -97,9 +98,26 @@ menu{
 }
 .btn-noti-skyblue{
   background-color: #13b497;
+  display: flex;
 }
 .logo {
   display: block;
   margin: 0 auto 2rem;
+}
+@media(max-width:1000px){
+.input-search, .btn-noti-skyblue{
+  display: none;
+}
+.search{
+    display: none;
+  }
+}
+@media(max-width:620px){
+  .notis .btn-noti:nth-child(2){
+    display: none;
+  }
+  .info-user p{
+    display: none;
+  }
 }
 </style>
